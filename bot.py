@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # This needs to be filled with the Page Access Token that will be provided
 # by the Facebook App that will be created.
-PAT = 'EAAB3HnLuiGIBAE97IIqqqOgum6CIYoz9XnAJp9zpt8SlDxXUCctaZBtmzs8C6buHe65bZCjV85t1R5ZCRuthl7wLrvD0B8wND0bXPfZBGA7cS2DaWvQGVO0C9XKuJD0noPajrZC8T88qwXmK35BnNKDSxKcb75I8Szju3add87IouTmC1Hbnu'
+PAT = 'EAAB3HnLuiGIBACQNdq2JxWEgFUah3E7VRIeKbIUD9KLajkfN6mCZCykLerTtVAZAoZCRpZCmeaTqTuCrJyeWfZAD0jPZAgRBSLr5lqBLKMlRJYgos8l8nQVZBJeEtQRVhGYZBJGCnkQB9I67sHZA6qvhHdUqcblJfPKmvMlQvVgSbRMJMzmPHXmV9'
 
 @app.route('/', methods=['GET'])
 def handle_verification():
