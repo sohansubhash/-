@@ -1,8 +1,17 @@
 from flask import Flask, request
+from flask_mysqldb import MySQL
 import json
 import requests
 
 app = Flask(__name__)
+ 
+# MySQL configurations
+app.config['MYSQL_DATABASE_USER'] = 'jay'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'jay'
+app.config['MYSQL_DATABASE_DB'] = 'BucketList'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+mysql = MySQL(app)
+
 
 # This needs to be filled with the Page Access Token that will be provided
 # by the Facebook App that will be created.
